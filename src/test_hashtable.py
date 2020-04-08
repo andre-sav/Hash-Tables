@@ -172,8 +172,10 @@ class TestHashTable(unittest.TestCase):
         self.assertTrue(len(ht.storage) == 16)
 
         return_value = ht.retrieve("key-0")
+        print("Test ", return_value)
         self.assertTrue(return_value == "val-0")
         return_value = ht.retrieve("key-1")
+        print("Test 2 ", return_value)
         self.assertTrue(return_value == "val-1")
         return_value = ht.retrieve("key-2")
         self.assertTrue(return_value == "val-2")
